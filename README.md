@@ -39,6 +39,11 @@ Change into the directory:
 $ cd ruby-card-game
 ```
 
+Install gems:
+```shell
+$ bundle
+```
+
 To run tests:
 ```shell
 $ rspec
