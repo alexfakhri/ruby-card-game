@@ -42,23 +42,23 @@ describe Game do
     let(:player_2) { Player.new("Bill") }
     subject { described_class.new(deck, [player_1, player_2]) }
 
-    it "checks the rank of the card and retruns 13 if King" do
+    it "checks the rank of the card and returns 13 if King" do
       expect(subject.check_values("K")).to eq 13
     end
 
-    it "checks the rank of the card and retruns 12 if Queen" do
+    it "checks the rank of the card and returns 12 if Queen" do
       expect(subject.check_values("Q")).to eq 12
     end
 
-    it "checks the rank of the card and retruns 11 if Jack" do
+    it "checks the rank of the card and returns 11 if Jack" do
       expect(subject.check_values("J")).to eq 11
     end
 
-    it "checks the rank of the card and retruns 1 if Ace" do
+    it "checks the rank of the card and returns 1 if Ace" do
       expect(subject.check_values("A")).to eq 1
     end
 
-    it "checks the rank of the card and retruns the face value of not a letter" do
+    it "checks the rank of the card and returns the face value of not a letter" do
       expect(subject.check_values("8")).to eq 8
     end
 

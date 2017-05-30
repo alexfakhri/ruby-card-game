@@ -2,11 +2,13 @@ class Game
 
   attr_reader :deck, :players
 
+  #Initializing the game with players and deck of cards
   def initialize(deck, players)
     @deck = deck
     @players = players
   end
 
+  #Dealing cards, can take any number as argumet for the number of cards dealt
   def deal_cards(cards)
     @players.each do |player|
       player.hand += @deck.cards.pop(cards)
@@ -28,6 +30,7 @@ class Game
     end
   end
 
+  #Replacing picture card ranks with numeric values
   def check_values(value)
     case value
     when 'K' then 13

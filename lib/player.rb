@@ -5,7 +5,7 @@ class Player
 
   def initialize(name)
     @name = name
-    @hand = []
+    @hand = [] #This is the players card hand, maybe needs a better name
     @score = 0
   end
 
